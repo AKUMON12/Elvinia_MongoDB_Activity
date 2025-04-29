@@ -35,6 +35,11 @@
     { $set: { rating: 8.9 } }
 );
 > db.movies.deleteOne({ title: "The Matrix" });
+< {
+  acknowledged: true,
+  deletedCount: 1
+}
+
 ```
 
 ---
